@@ -1,0 +1,14 @@
+// Classe a ser editada: ainda não tem a possibilidade do usuário de digitar um valor de tempo
+class time {
+
+public int Hour(int h){
+ return h;
+}
+ public int Minute(int m){
+ return m; 
+}
+public static void main (String arg[]){
+	time t = new time();
+	System.out.println("The time now is "+t.Hour(3)+":"+t.Minute(25));
+}
+}
