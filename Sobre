@@ -1,0 +1,5 @@
+O encapsulamento tem como objetivo reduzir problemas de colisões de variáveis (nomes idênticos) e para agrupar
+métodos relacionados entre si (funções) e propriedades (variáveis) para compor um objeto da classe(como uma família). 
+Também torna menos elaborada a reformulação do código fonte com um grande número de linhas e classes.
+Mais exemplos de encapsulamento:
+http://blog.caelum.com.br/revisitando-a-orientacao-a-objetos-encapsulamento-no-java/
