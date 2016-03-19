@@ -1,14 +1,22 @@
-// Classe a ser editada: ainda não tem a possibilidade do usuário de digitar um valor de tempo
-class time {
 
-public int Hour(int h){
- return h;
+// A função adquire a hora atual do computador e a exibe ao usuário
+import java.util.Calendar;
+import java.util.Scanner;
+import java.text.SimpleDateFormat;
+
+class time {
+	Scanner ler = new Scanner(System.in);
+
+	public final String Hour() { // uma classe que encapsula o método que obtém
+									// o valor da hora
+		Calendar cal = Calendar.getInstance();
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+		return sdf.format(cal.getTime());
+	}
+
+	public static void main(String arg[]) {
+		time now = new time();
+		System.out.println("Now it's " + now.Hour() + ". You should be working.");
+	}
 }
- public int Minute(int m){
- return m; 
-}
-public static void main (String arg[]){
-	time t = new time();
-	System.out.println("The time now is "+t.Hour(3)+":"+t.Minute(25));
-}
-}
+
